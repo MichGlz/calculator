@@ -9,19 +9,19 @@ const operatorSign = document.querySelector("#operator");
 const firstNumber = document.querySelector("#firstnumber");
 const secondNumber = document.querySelector("#secondnumber");
 const checkBox = document.querySelector("#doround");
-
+//------------------------
 function start() {
   console.log("start");
   document.querySelector("#calculate").addEventListener("click", readValue);
   document.querySelector("#clear").addEventListener("click", clearList);
 }
-
+//------------------------
 function clearList() {
   document.querySelectorAll("#results li").forEach((li) => {
     li.remove();
   });
 }
-
+//-------------------------
 function readValue() {
   console.log("value");
   number1 = Number(firstNumber.value);
@@ -34,7 +34,7 @@ function readValue() {
     alert("remeber to fill both boxes");
   }
 }
-
+//------------------------------------
 function calculate() {
   console.log("calculate");
 
@@ -60,7 +60,7 @@ function calculate() {
 
   console.log(result);
 }
-
+//-------------------------------------
 function roundResult() {
   if (checkBox.checked) {
     let numberDecimals = document.querySelector("#decimals").value;
@@ -68,7 +68,7 @@ function roundResult() {
   }
   logResult();
 }
-
+//-------------------------------------
 function logResult() {
   firstNumber.value = result;
   let x = document.createElement("LI");
@@ -77,7 +77,7 @@ function logResult() {
   document.querySelector("#results").appendChild(x);
   scrollList();
 }
-
+//--------------------------------------
 function scrollList() {
   let lastLi = document.querySelector("#results li:last-child");
   lastLi.scrollIntoView(true);
