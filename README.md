@@ -1,3 +1,3 @@
 https://michglz.github.io/calculator/
 
-I didn't fully read the assignment so I never commit my progress through it.
+I didn't fully read all the assignment before I started to code so I never commited my progress through the task.
